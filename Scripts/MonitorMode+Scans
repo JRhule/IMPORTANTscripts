@@ -1,0 +1,64 @@
+#!/bin/bash
+
+echo "Would you like to run MonitorMode+Scans? [y|n]"
+read M
+case $M in
+	y|Y) echo "Running MonitorMode+Scans...";;
+	n|N) echo "Closing MonitorMode+Scans...";exit;;
+esac
+let w0="wlan0"
+let w1="wlan1"
+
+echo "What Network Interface would you like to use?"
+read INTER
+	case $INTER in
+		wlan0) sudo airmon-ng;sudo airmon-ng check;sudo airmon-ng check kill;sudo airmon-ng start $INTER;sudo iwconfig;
+			echo "What would you like to do?";echo "
+			1) Basic Scan 
+	       		2) Scan for certain channels 
+	       		3) Scan for one specific channel
+			e) exit Monitor Mode";
+				read W
+		  		case $W in
+					1) echo "Scanning...";sudo airodump-ng $INTER;;
+					2) echo "Scanning...";echo "What channels would you like to scan? (add comma after channel #  Example --> 1,2,3)"
+		  			   read C
+		 			   case $C in
+					  	 *)sudo airodump-ng -c $C $INTER;;
+					   esac;;
+					3) echo "Scanning...";echo "What channel would you like to scan?"
+		   			   read S
+		   			   case $S in
+						 *)sudo airodump-ng -c $S $INTER;;
+					   esac;; 
+					e) echo "Exiting MonitorMode+Scans";sudo airmon-ng stop $INTER;sudo systemctl start NetworkManager;;
+				esac
+		;;
+
+		wlan1) sudo airmon-ng;sudo airmon-ng check;sudo airmon-ng check kill;sudo airmon-ng start $INTER;sudo iwconfig;
+			echo "What would you like to do?";echo "
+			1) Basic Scan
+			2) Scan for certain channels
+			3) Scan for one specific channel
+			e) exit Monitor Mode";
+		  		read W
+		  		case $W in
+					1) echo "Scanning...";sudo airodump-ng $INTER;;
+					2) echo "Scanning...";echo "What channels would you like to scan? (add comma after channel #  Example --> 1,2,3)"
+					   read C
+					   case $C in
+						   *)sudo airodump-ng -c $C $INTER;;
+					   esac;;
+					3) echo "Scanning...";echo "What channel would you like to scan?"
+					   read S
+					   case $S in
+						   *)sudo airodump-ng -c $S $INTER;;
+					   esac;;
+			
+				esac
+		;;
+
+		e) echo "Exiting MonitorMode+Scans";sudo airmon-ng stop $INTER;sudo systemctl start NetworkManager;;
+		
+		*) echo Interface not available, try again...;sudo ./MonitorMode+Scans;;
+	esac

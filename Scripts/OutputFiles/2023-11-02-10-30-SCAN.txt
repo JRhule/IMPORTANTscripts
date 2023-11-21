@@ -1,0 +1,16 @@
+ MAC: 18:9C:27:2D:B8:E0   NAME: ATT6juc7A2   
+ MAC: 8A:8A:20:DA:F1:F6   NAME: cph guest 5 
+ MAC: B8:66:85:CF:1E:26   NAME: MySpectrumWiFi20-2G   
+ MAC: 00:30:44:3F:FA:1F   NAME:    
+ MAC: 7A:8A:20:DA:F1:F6   NAME: 10010   
+ MAC: 9A:8A:20:DA:F1:F6   NAME:    
+ MAC: 9C:76:13:E3:4D:00   NAME: Ring Setup 00 
+ MAC: 98:52:4A:2A:DF:E0   NAME:    
+ MAC: A6:E5:97:2A:0C:FC   NAME: 57ARL1NK   
+ MAC: F2:9F:C2:FF:FE:83   NAME: SkyNet Stage 2 
+ MAC: 02:9F:C2:FF:FE:83   NAME: 10010   
+ MAC: 12:9F:C2:FF:FE:83   NAME: cph guest 5 
+ MAC:   NAME:   
+ MAC: Station  NAME:   
+ MAC: D2:55:F4:A2:F0:2F   NAME:   
+ MAC:   NAME:   

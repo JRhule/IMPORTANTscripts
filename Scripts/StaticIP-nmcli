@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo "Would you like to set a Static IP? (y/n)"
+read YN
+case $YN in
+	y|Y)
+	echo "Enter Network   Example --> (DragonSlayer5G)";
+	read N;	
+	echo "Enter Static IP   Example --> (192.168.2.20/24)";
+	read S;
+	echo "Enter the Default Gateway   Example --> (192.168.2.1)";
+	read G;
+	echo "Enter Preferred DNS   Example --> (8.8.8.8)";
+	read D;
+	echo "Changing IP addressing to static...";
+	echo "Applying desired values...";
+	 nmcli con mod $N ipv4.addresses $S;
+	 nmcli con mod $N ipv4.gateway $G;
+	 nmcli con mod $N ipv4.dns "$D";
+	 nmcli con mod $N ipv4.method manual;
+	 sleep 5;
+	echo "Saving changes...";
+	sleep 10;
+	 nmcli con up $N;
+	echo "Enter Network Interface   Example --> (wlan0)";
+	read I;
+	echo "Confirming IP...";
+	 ip addr show $I;;
+
+	n|N) echo "Exiting...";exit;;
+esac	

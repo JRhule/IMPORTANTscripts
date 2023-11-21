@@ -1,0 +1,33 @@
+ MAC: D2:C0:BF:18:57:CF   NAME: NexDock-011A52   
+ MAC: 12:9F:C2:FF:FE:83   NAME: cph guest 5 
+ MAC: F2:9F:C2:FF:FE:83   NAME: SkyNet Stage 2 
+ MAC: 02:9F:C2:FF:FE:83   NAME: 10010   
+ MAC: 74:AC:B9:C7:09:4F   NAME: GTRLDTSJ   
+ MAC: 9A:8A:20:DA:F1:F6   NAME:    
+ MAC: 18:9C:27:2D:B8:E0   NAME: ATT6juc7A2   
+ MAC: 00:30:44:3F:FA:1F   NAME:    
+ MAC: 8A:8A:20:DA:F1:F6   NAME: cph guest 5 
+ MAC: 78:8A:20:DA:F1:F6   NAME: SkyNet Stage 2 
+ MAC: 18:90:88:15:96:05   NAME:    
+ MAC: 9C:76:13:E3:4D:00   NAME: Ring Setup 00 
+ MAC: 7A:8A:20:DA:F1:F6   NAME: 10010   
+ MAC: 90:32:4B:02:EC:1D   NAME: Brick Wall Solstice 
+ MAC: B8:66:85:CF:1E:26   NAME: MySpectrumWiFi20-2G   
+ MAC: 96:83:C4:20:CF:52   NAME: CyberSEC   
+ MAC: 22:9F:C2:FF:FE:83   NAME:    
+ MAC: 92:83:C4:20:CF:52   NAME: CyberSEC-Guest   
+ MAC: 5C:AA:FD:CC:CB:27   NAME:    
+ MAC: 5C:AA:FD:CF:19:49   NAME:    
+ MAC: A6:E5:97:4A:0C:FC   NAME:    
+ MAC: 98:52:4A:2A:DF:E0   NAME: sweetemotions   
+ MAC: 00:25:00:FF:94:73   NAME:    
+ MAC: A6:E5:97:2A:0C:FC   NAME: 57ARL1NK   
+ MAC:   NAME:   
+ MAC: Station  NAME:   
+ MAC: B8:27:EB:A8:CB:5D   NAME:   
+ MAC: 50:41:1C:51:F9:FA   NAME:   
+ MAC: DA:44:61:EA:18:B9   NAME:   
+ MAC: 86:63:5A:3B:70:98   NAME:   
+ MAC: 18:AF:61:B8:9B:EC   NAME:   
+ MAC: 54:2A:1B:15:A5:07   NAME:   
+ MAC: 94:9F:3E:B4:6E:A1   NAME:   

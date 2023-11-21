@@ -1,0 +1,89 @@
+#!/bin/bash
+
+# Get the current time
+NOW=$(date +%Y-%m-%d-%M-%S)
+	
+L1='NR ==3, NR ==35 {print $19,$20,$21}'
+
+echo "What Network Interface would you like to use?
+1. wlan1
+2. wlan0
+3. exit"
+read NET
+case $NET in 
+	2) echo "Using wlan0"; echo "Please wait 1 Minute";
+
+	#Activating Monitor Mode
+	echo "Activating Monitor Mode";
+	sudo airmon-ng;
+	sudo airmon-ng check kill;
+	sudo airmon-ng wlan0;
+	sudo iwconfig;
+
+	#exit message
+	echo "Exit when ready.. (Use CRTL + C)";
+		
+	# Start airodump-ng and save the output to a file
+	sudo airodump-ng wlan0 -w $NOW-output --output-format csv; 
+	awk 'NR ==3, NR ==35 {print" MAC " $1, " NAME "$19,$20,$21}' $NOW-output-01.csv > $NOW-OUT;
+	sed 's/,/ /g' $NOW-OUT > OutputFiles/$NOW-SCAN.txt;	
+	
+	#Print current time
+	echo "        ";
+	echo "[IMPORTANT INFORMATION]";
+	echo "Current time stamp -> $NOW";
+	echo "----------------------------------------";
+	echo "Scan Contents Below"
+	echo "----------------------------------------";
+	cat OutputFiles/$NOW-SCAN.txt;
+	echo "Process IDs Below"
+	echo "----------------------------------------";
+
+	#remove other files
+	rm $NOW-output-01.csv;
+	rm $NOW-OUT;
+
+	# Wait for airodump-ng to finish
+	ps aux | grep airodump-ng;;
+
+	1) echo "Using wlan1"; echo "Please wait 1 Minute";
+
+	echo "";
+	#Activating Monitor Mode
+	echo "Activating Monitor Mode";
+	sudo airmon-ng;
+	sudo airmon-ng check kill;
+	sudo airmon-ng wlan1;
+	sudo iwconfig;
+
+	#exit message
+	echo "Exit when ready.. (Use CRTL + C)";
+
+	# Start airodump-ng and save the output to a file;
+	sudo airodump-ng wlan1 -w $NOW-output --output-format csv ;  
+	awk 'NR ==3, NR ==35 {print" MAC: " $1, " NAME: "$19,$20,$21}' $NOW-output-01.csv > $NOW-OUT;
+	sed 's/,/ /g' $NOW-OUT > OutputFiles/$NOW-SCAN.txt;
+
+	#Print current time
+	echo "      ";
+	echo "[IMPORTANT INFORMATION]";
+	echo "Current time stamp -> $NOW";
+	echo "----------------------------------------";
+	echo "Scan Contents Below"
+	echo "----------------------------------------";
+	cat OutputFiles/$NOW-SCAN.txt;
+	echo "Process IDs Below"
+	echo "----------------------------------------";
+
+	#remove other files
+	rm $NOW-output-01.csv;
+	rm $NOW-OUT;
+
+	# Wait for airodump-ng to finish
+	ps aux | grep airodump-ng;;
+
+	3) exit;;
+esac
+
+
+

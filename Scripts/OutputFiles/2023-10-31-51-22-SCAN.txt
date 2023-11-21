@@ -1,0 +1,33 @@
+ MAC: 12:9F:C2:FF:FE:83   NAME: cph guest 5 
+ MAC: F2:9F:C2:FF:FE:83   NAME: SkyNet Stage 2 
+ MAC: 02:9F:C2:FF:FE:83   NAME: 10010   
+ MAC: 18:9C:27:2D:B8:E0   NAME: ATT6juc7A2   
+ MAC: 78:8A:20:DA:F1:F6   NAME: SkyNet Stage 2 
+ MAC: 00:30:44:3F:FA:1F   NAME:    
+ MAC: 7A:8A:20:DA:F1:F6   NAME: 10010   
+ MAC: 9A:8A:20:DA:F1:F6   NAME:    
+ MAC: 8A:8A:20:DA:F1:F6   NAME: cph guest 5 
+ MAC: 9C:76:13:E3:4D:00   NAME: Ring Setup 00 
+ MAC: 98:52:4A:2A:DF:E0   NAME: sweetemotions   
+ MAC: 90:32:4B:02:EC:1D   NAME: Brick Wall Solstice 
+ MAC: A6:E5:97:2A:0C:FC   NAME: 57ARL1NK   
+ MAC: A6:E5:97:4A:0C:FC   NAME:    
+ MAC: B8:66:85:CF:1E:26   NAME: MySpectrumWiFi20-2G   
+ MAC: 22:9F:C2:FF:FE:83   NAME:    
+ MAC: 96:83:C4:20:CF:52   NAME: CyberSEC   
+ MAC: 92:83:C4:20:CF:52   NAME: CyberSEC-Guest   
+ MAC: 5C:AA:FD:CC:CB:27   NAME:    
+ MAC: 5C:AA:FD:CF:19:49   NAME:    
+ MAC: 7C:DB:98:64:93:C6   NAME: MySpectrumWiFiC8-2G   
+ MAC: 00:25:00:FF:94:73   NAME:    
+ MAC:   NAME:   
+ MAC: Station  NAME:   
+ MAC: 50:41:1C:51:F9:FA   NAME:   
+ MAC: 68:A4:0E:1F:3F:79   NAME:   
+ MAC: 8A:34:A3:F3:79:9E   NAME:   
+ MAC: 18:AF:61:B8:9B:EC   NAME:   
+ MAC: 20:A5:CB:CC:89:4D   NAME:   
+ MAC: 34:7E:5C:D7:EE:8F   NAME:   
+ MAC: 5C:AA:FD:CC:CB:27   NAME:   
+ MAC: 94:9F:3E:B4:6E:A1   NAME:   
+ MAC: 54:2A:1B:15:A5:07   NAME:   

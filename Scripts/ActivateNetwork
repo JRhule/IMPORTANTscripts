@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "would you like to run AcitivateNetwork? [y|n]"
+read A
+case $A in
+	y|Y) echo "Activating Network...";sudo systemctl start NetworkManager;echo "done.";;
+	n|N) echo "Exiting...";exit;;
+esac
+
